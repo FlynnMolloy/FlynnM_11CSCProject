@@ -1,6 +1,4 @@
-''' 16/06 code '''
-# space for imports
-import sys
+''' 27/06 code '''
 
 def menu() :
     ''' menu function'''
@@ -13,7 +11,7 @@ def menu() :
         try :
             user_choice = int(input('Which game would you like to play?'))
             if user_choice > num_choices or user_choice < 1 :
-                print('Error with choice, 1')
+                print('Error with choice, 1, please choose a number in bounds')
             else :
                 print(f'You picked option {user_choice}')
                 flag = False
@@ -26,14 +24,17 @@ def menu() :
         game2()
     else :
         print('Bye')
-        sys.exit()
-
-def game1() :
-    '''placeholder'''
-    print('Game 1')
+        quit()
 
 def game2() : #a
     '''placeholder'''
     print('Game 2')
 
+#main routine
+
+#imports
+from game1 import *
+import math
+
+#main code
 menu()
