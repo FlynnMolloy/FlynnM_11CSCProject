@@ -1,5 +1,9 @@
-''' 27/06 code '''
+''' 9/07 code '''
 
+# imports
+from game1 import *
+
+#functions
 def menu() :
     ''' menu function'''
     num_choices = 3
@@ -31,10 +35,5 @@ def game2() : #a
     print('Game 2')
 
 #main routine
-
-#imports
-from game1 import *
-import math
-
-#main code
-menu()
+while True :
+    menu()
