@@ -1,4 +1,4 @@
-'''27/06 code'''
+''' 9/07 code'''
 
 import math
 import random
@@ -6,7 +6,10 @@ import random
 def game1() :
     ''' higher or lower game '''
     print('Game 1')
-    print('Instructions')
+    print('Instructions:')
+    print('\nThe computer will pick a number between the boundaries you provide.')
+    print('\nYou will have to guess the number the computer has chosen.')
+    print("\nYou will be told if the number you guessed is higher/lower than the computer's choice")
     max_bound = input_num(1000, 1, str('\nWhat would you like the maximum value to be?\n'))
     min_bound = input_num(1000, 1, str('\nWhat would you like the minimum value to be?\n'))
     rounds = input_num(100, 1, str('\nHow many rounds would you like to play?\n'))

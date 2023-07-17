@@ -32,7 +32,7 @@ def menu() :
 
 def game2() : #a
     '''placeholder'''
-    print('Game 2')
+    print('Game 2 placeholder')
 
 #main routine
 while True :
