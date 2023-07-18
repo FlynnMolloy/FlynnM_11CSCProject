@@ -3,13 +3,13 @@
 import math
 import random
 
-def game1() :
+def higher_lower() :
     ''' higher or lower game '''
     print('Game 1')
     print('Instructions:')
     print('\nThe computer will pick a number between the boundaries you provide.')
     print('\nYou will have to guess the number the computer has chosen.')
-    print("\nYou will be told if the number you guessed is higher/lower than the computer's choice")
+    print("\nYou will be told if the number you guessed is higher/lower than the computer choice.")
     max_bound = input_num(1000, 1, str('\nWhat would you like the maximum value to be?\n'))
     min_bound = input_num(1000, 1, str('\nWhat would you like the minimum value to be?\n'))
     rounds = input_num(100, 1, str('\nHow many rounds would you like to play?\n'))
@@ -17,12 +17,14 @@ def game1() :
     score_array = []
     dropped = 0
     for i in range(rounds) :
-        print('Starting round...')
+        print(f'Round {i}')
+        print('\nStarting round...')
         win = 0
         score = 0
         computer_choice = random.randint(min_bound, max_bound)
         for a in range(guesses) :
-            user_choice = input_num(max_bound, min_bound, '\nWhat number would you like to guess?')
+            print(f'You have {(guesses - a)} guesses left.')
+            user_choice = input_num(max_bound, min_bound, 'Your guess:\n')
             score+=1
             if user_choice == computer_choice :
                 print('You win!\n')
@@ -46,11 +48,13 @@ def game1() :
     print('Your rounds have expired, would you like to play again?')
     replay = input_num(2, 1, '1 for yes, 2 for no')
     if replay == 1 :
-        game1()
+        higher_lower()
+    print('Resetting to menu...\n')
 
 
 
-def input_num(max_f, min_f, msg_f) : #input numbers for game 1
+def input_num(max_f, min_f, msg_f) :
+    '''input numebrs for game 1'''
     input_flag = True
     while input_flag is True :
         try :

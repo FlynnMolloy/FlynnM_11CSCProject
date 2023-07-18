@@ -2,18 +2,20 @@
 
 # imports
 from game1 import *
+from game2 import *
 
 #functions
 def menu() :
     ''' menu function'''
+    print('Welcome to the 11CSC Game Compendium!\n')
     num_choices = 3
     flag = True
     while flag is True :
         print('1: Higher or Lower')
-        print('2: Game')
+        print('2: Lucky Unicorn')
         print('3: Quit')
         try :
-            user_choice = int(input('Which game would you like to play?'))
+            user_choice = int(input('\nWhich game would you like to play?\n'))
             if user_choice > num_choices or user_choice < 1 :
                 print('Error with choice, 1, please choose a number in bounds')
             else :
@@ -23,16 +25,12 @@ def menu() :
             print('Error with choice, 2')
 
     if user_choice == 1 :
-        game1()
+        higher_lower()
     elif user_choice == 2 :
-        game2()
+        lucky_unicorn()
     else :
-        print('Bye')
+        print('Goodbye!')
         quit()
-
-def game2() : #a
-    '''placeholder'''
-    print('Game 2 placeholder')
 
 #main routine
 while True :
