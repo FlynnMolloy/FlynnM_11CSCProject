@@ -5,6 +5,6 @@ In this project I will create a game compendium.
 
 Wiki found [here](https://github.com/FlynnMolloy/FlynnM_11CSCProject/wiki/Proposal)
 
-Diary found here
+Diary found [here](https://github.com/FlynnMolloy/FlynnM_11CSCProject/wiki/Phase-1)
 
 Project schedule found here
