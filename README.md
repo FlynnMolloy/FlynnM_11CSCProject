@@ -7,4 +7,4 @@ Wiki found [here](https://github.com/FlynnMolloy/FlynnM_11CSCProject/wiki/Propos
 
 Diary found [here](https://github.com/FlynnMolloy/FlynnM_11CSCProject/wiki/Phase-1)
 
-Project schedule found here
+Project schedule found [here](https://github.com/users/FlynnMolloy/projects/1/views/1)
